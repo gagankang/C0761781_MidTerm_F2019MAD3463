@@ -8,7 +8,7 @@ public class LambtonStringTools {
         }
         return rev.toString();
     }
-    // Binary To Decimal 
+    // Binary To Decimal
     public int binaryToDecimal(String binary) {
         int decimal = 0;
         int binaryMultiplier = 1;
@@ -25,6 +25,7 @@ public class LambtonStringTools {
 
 
     }
-    // binary to Decimal
+    // Replace String
+
 
 }

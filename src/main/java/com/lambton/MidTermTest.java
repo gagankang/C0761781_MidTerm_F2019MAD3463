@@ -3,7 +3,7 @@ public class MidTermTest {
     public static void main(String[] args)
     {
         LambtonStringTools object = new LambtonStringTools();
-        System.out.println(" Lambton "+object.reverse("Lambton"));
+        System.out.println(" Lambton college: "+object.reverse(" Lambton college"));
         System.out.println("1000 "+object.binaryToDecimal("1000"));
         System.out.println("100000 "+object.binaryToDecimal("1000"));
         System.out.println("01001101 "+object.binaryToDecimal("01001101"));
