@@ -24,8 +24,30 @@ public class LambtonStringTools {
         return decimal;
 
 
-    }
-    // Replace String
 
+    }
+    // Initials
+    public String initials(String fName) {
+        fName = fName.toUpperCase();
+        String name[] = fName.split(" ");
+        if (name.length == 2) {
+            return null;
+        } else {
+            String initials = " ";
+            for (int i = 0; i < name.length - 1; i++) {
+                initials += name[i].toUpperCase().charAt(0) + ". ";
+            }
+            initials += titleCase(name[name.length - 1]);
+            return initials;
+        }
+    }
+    //
+    private String titleCase(String name) {
+        name = name.toLowerCase();
+        String titleCasedName = "";
+        titleCasedName += Character.toString(name.charAt(0)).toUpperCase();
+        titleCasedName += name.substring(1);
+        return titleCasedName;
+    }
 
 }
